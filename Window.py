@@ -23,20 +23,20 @@ class window:
             self.redraw()
         print("window closed...")
 
-    def draw_line(self, line, fillcolour):
+    def draw_line(self, line, fillcolour="black"):
         line.draw(self.canvas, fillcolour)
 
     def close(self):
         self.window_running = False 
 
 
-class point:
+class Point:
     def __init__(self, x, y) -> None:
         self.x = x
         self.y = y
 
 
-class line:
+class Line:
     def __init__(self, p1, p2) -> None:
         self.p1 = p1
         self.p2 = p2
