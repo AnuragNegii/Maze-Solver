@@ -1,1 +1,17 @@
-
+Traceback (most recent call last):
+  File "/home/anu/media/workspace/github.com/username/Maze-Solver/main.py", line 19, in <module>
+    main()
+    ~~~~^^
+  File "/home/anu/media/workspace/github.com/username/Maze-Solver/main.py", line 15, in main
+    maze = Maze(margin, margin, num_rows, num_cols, cell_size_x, cell_size_y, win)
+  File "/home/anu/media/workspace/github.com/username/Maze-Solver/Maze.py", line 14, in __init__
+    self.create_cells()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/anu/media/workspace/github.com/username/Maze-Solver/Maze.py", line 24, in create_cells
+    self._draw_cells(i, j)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/anu/media/workspace/github.com/username/Maze-Solver/Maze.py", line 33, in _draw_cells
+    self.canvas[i][j].draw(x1, y1, x2, y2)
+    ~~~~~~~~~~~^^^
+TypeError: 'window' object is not subscriptable
+[
